@@ -9,11 +9,11 @@
 
 | Name | Role |
 |------|------|
-| Shubhrajit Malla | ML Pipeline, Graph Construction, Adaptive Retraining |
+| Shubhrajit Malla | ML Pipeline, Graph Construction, Adaptive Retraining, Evaluation |
 | Abhishek Nayak | Data Preprocessing, Feature Engineering |
-| Nikhil Kumar Mahato | Log Anomaly Detection, CICIDS2017 Validation |
+| Nikhil Kumar Mahato | Log Anomaly Detection, Model Training |
 | Sidhartha Ranjan Jena | Dashboard Development, Testing |
-| Amiya Ranjan Mallick | Model Training, Evaluation |
+| Amiya Ranjan Mallick | Testing |
 
 ---
 
