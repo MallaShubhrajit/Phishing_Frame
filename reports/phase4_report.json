@@ -1,0 +1,56 @@
+{
+  "phase": 4,
+  "part_a_clustering": {
+    "algorithm": "Spectral Clustering",
+    "n_clusters": 3,
+    "sample_size": 5000,
+    "affinity": "rbf",
+    "cluster_summary": [
+      {
+        "cluster_id": 0,
+        "total_urls": 2417,
+        "phishing_urls": 1,
+        "phish_rate_pct": 0.0,
+        "risk_label": "LOW RISK \u2014 Legitimate"
+      },
+      {
+        "cluster_id": 1,
+        "total_urls": 568,
+        "phishing_urls": 0,
+        "phish_rate_pct": 0.0,
+        "risk_label": "LOW RISK \u2014 Legitimate"
+      },
+      {
+        "cluster_id": 2,
+        "total_urls": 2015,
+        "phishing_urls": 1849,
+        "phish_rate_pct": 91.8,
+        "risk_label": "HIGH RISK \u2014 Phishing Campaign"
+      }
+    ],
+    "outputs": {
+      "cluster_assignments": "../data/processed/cluster_assignments.csv",
+      "domain_cluster_risk": "../data/processed/domain_cluster_risk.csv",
+      "cluster_analysis_plot": "../reports/cluster_analysis.png",
+      "subgraph_plot": "../reports/cluster_subgraph.png"
+    }
+  },
+  "part_b_anomaly": {
+    "algorithm": "Isolation Forest",
+    "n_estimators": 200,
+    "contamination": 0.06,
+    "total_ips_analysed": 53,
+    "anomalous_ips_detected": 4,
+    "normal_ips": 49,
+    "injected_anomalies": 3,
+    "correctly_detected": 3,
+    "detection_rate_pct": 100.0,
+    "outputs": {
+      "scored_log_features": "../data/processed/log_features_scored.csv",
+      "top_anomalous_ips": "../data/processed/top_anomalous_ips.csv",
+      "isolation_forest_model": "../models/isolation_forest.pkl",
+      "log_scaler": "../models/scaler_log.pkl",
+      "anomaly_plot": "../reports/log_anomaly_results.png"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+ip,request_count,unique_urls,error_rate,avg_size,post_ratio,unique_url_ratio,anomaly_reason
+10.0.0.99,150,1,1.0,210.0,1.0,0.006666666666666667,high_request_count | high_error_rate | high_post_ratio
+185.220.101.45,100,8,1.0,180.0,0.0,0.08,high_error_rate
+192.168.1.24,118,6,0.0,4362.813559322034,0.4830508474576271,0.05084745762711865,high_request_count
+192.168.1.9,131,6,0.0,4161.045801526718,0.5038167938931297,0.04580152671755725,high_request_count

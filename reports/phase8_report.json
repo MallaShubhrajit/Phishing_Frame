@@ -1,0 +1,43 @@
+{
+  "phase": 8,
+  "label_convention": "0.0=Phishing  |  1.0=Legitimate",
+  "pytest": {
+    "total_tests": 29,
+    "passed": 21,
+    "failed": 8,
+    "errors": 0,
+    "all_passed": false
+  },
+  "adversarial_testing": {
+    "phishing_urls_tested": 5,
+    "phishing_detected": 0,
+    "detection_rate_pct": 0.0,
+    "legitimate_urls_tested": 4,
+    "legitimate_correct": 3,
+    "legitimate_accuracy_pct": 75.0,
+    "note": "Adversarial URLs use HTTPS and clean structure \u2014 URL features alone are insufficient to catch them. Graph features (domain_url_count) would improve this."
+  },
+  "final_model_performance": {
+    "test_samples": 20175,
+    "accuracy": 0.9958,
+    "precision_macro": 0.9946,
+    "recall_macro": 0.9965,
+    "f1_macro": 0.9955,
+    "phishing_caught": 7470,
+    "phishing_missed": 6,
+    "legit_cleared": 12621,
+    "legit_flagged": 78,
+    "phishing_miss_pct": 0.08,
+    "legit_alarm_pct": 0.61
+  },
+  "adaptive_module": {
+    "total_checks": 13,
+    "retraining_events": 1
+  },
+  "deliverables": {
+    "test_suite": "tests/test_pipeline.py",
+    "dashboard": "dashboard/app.py",
+    "adaptive_script": "src/adaptive_learner.py",
+    "phase_reports": "reports/phase*_report.json"
+  }
+}

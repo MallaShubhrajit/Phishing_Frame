@@ -1,0 +1,23 @@
+{
+  "graph_nodes_total": 164943,
+  "graph_edges_total": 100872,
+  "url_nodes": 100872,
+  "domain_nodes": 64071,
+  "graph_features_added": [
+    "pagerank",
+    "in_degree",
+    "out_degree",
+    "domain_url_count"
+  ],
+  "total_features_now": 20,
+  "original_url_features": 16,
+  "high_risk_domains": 3,
+  "outputs": {
+    "graph": "../models/phishing_graph.gml",
+    "enriched_dataset": "../data/processed/df_with_graph_features.csv",
+    "feature_cols": "../data/processed/feature_cols_with_graph.npy",
+    "domain_risk": "../data/processed/domain_risk_analysis.csv",
+    "graph_feature_plot": "../reports/graph_feature_distributions.png",
+    "subgraph_plot": "../reports/graph_subgraph_visualisation.png"
+  }
+}

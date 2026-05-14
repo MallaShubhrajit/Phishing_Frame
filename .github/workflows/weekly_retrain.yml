@@ -1,0 +1,38 @@
+name: Weekly Adaptive Model Retraining
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+jobs:
+  retrain:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install numpy pandas scikit-learn imbalanced-learn joblib
+
+      - name: Run adaptive check
+        run: |
+          python src/adaptive_learner.py
+
+      - name: Commit retrained model if changed
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add models/random_forest.pkl
+          git add models/scaler.pkl
+          git add reports/retraining_log.json
+          git diff --staged --quiet || git commit -m "Weekly adaptive retrain $(date +'%Y-%m-%d')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

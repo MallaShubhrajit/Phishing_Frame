@@ -1,0 +1,25 @@
+{
+  "dataset": "CICIDS2017 Wednesday",
+  "total_flows": 100000,
+  "benign_flows": 64341,
+  "attack_flows": 35659,
+  "attack_types": {
+    "DoS Hulk": 24364,
+    "DoS slowloris": 5796,
+    "DoS Slowhttptest": 5499
+  },
+  "results": {
+    "true_positives": 14371,
+    "false_negatives": 21288,
+    "true_negatives": 43012,
+    "false_positives": 21329,
+    "detection_rate": 40.3,
+    "false_alarm_rate": 33.15,
+    "f1_score": 0.4028
+  },
+  "outputs": {
+    "top_anomalies": "../data/processed/cicids_top_anomalies.csv",
+    "results_plot": "../reports/cicids_anomaly_results.png",
+    "report": "../reports/cicids_report.json"
+  }
+}

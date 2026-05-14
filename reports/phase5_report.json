@@ -1,0 +1,59 @@
+{
+  "phase": 5,
+  "label_convention": "0.0=Phishing  |  1.0=Legitimate",
+  "features_in_model": 16,
+  "feature_names": [
+    "url_length",
+    "has_ip_address",
+    "dot_count",
+    "https_flag",
+    "url_entropy",
+    "token_count",
+    "subdomain_count",
+    "query_param_count",
+    "tld_length",
+    "path_length",
+    "has_hyphen_in_domain",
+    "number_of_digits",
+    "tld_popularity",
+    "suspicious_file_extension",
+    "domain_name_length",
+    "percentage_numeric_chars"
+  ],
+  "graph_features_used": [
+    "domain_url_count"
+  ],
+  "training_samples": 101586,
+  "test_samples": 20175,
+  "random_forest": {
+    "n_estimators": 200,
+    "max_depth": 15,
+    "accuracy": 0.9996,
+    "precision": 0.9996,
+    "recall": 0.9994,
+    "f1_macro": 0.9995,
+    "roc_auc": 0.9999,
+    "cv_f1_mean": 0.9994,
+    "cv_f1_std": 0.0002
+  },
+  "svm": {
+    "kernel": "rbf",
+    "C": 10,
+    "accuracy": 0.9994,
+    "precision": 0.9993,
+    "recall": 0.9994,
+    "f1_macro": 0.9994,
+    "roc_auc": 0.9997
+  },
+  "best_model": "random_forest",
+  "graph_feature_ranks": {
+    "domain_url_count": "not_in_model"
+  },
+  "outputs": {
+    "random_forest": "../models/random_forest.pkl",
+    "svm_model": "../models/svm_model.pkl",
+    "roc_curves": "../reports/roc_curves.png",
+    "confusion_matrices": "../reports/confusion_matrices.png",
+    "feature_importance": "../reports/feature_importance.png"
+  }
+}

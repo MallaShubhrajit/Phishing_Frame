@@ -1,0 +1,163 @@
+[
+  {
+    "timestamp": "2026-04-18T08:48:57.223073",
+    "f1_before": 0.9995,
+    "retrained": false,
+    "f1_after": null,
+    "improvement": null,
+    "trigger": null,
+    "threshold": 0.9
+  },
+  {
+    "timestamp": "2026-04-25T18:31:18.460170",
+    "f1_before": 0.9995,
+    "retrained": false,
+    "f1_after": null,
+    "improvement": null,
+    "trigger": null,
+    "threshold": 0.9
+  },
+  {
+    "timestamp": "2026-04-27T11:16:18.091886",
+    "f1_before": 0.9995,
+    "retrained": false,
+    "f1_after": null,
+    "improvement": null,
+    "trigger": null,
+    "threshold": 0.9
+  },
+  {
+    "timestamp": "2026-04-27T11:16:37.438905",
+    "f1_before": 0.9995,
+    "retrained": false,
+    "f1_after": null,
+    "improvement": null,
+    "trigger": null,
+    "threshold": 0.999
+  },
+  {
+    "timestamp": "2026-04-27T13:44:29.987990",
+    "f1_before": 0.9995,
+    "retrained": false,
+    "f1_after": null,
+    "improvement": null,
+    "trigger": null,
+    "threshold": 0.999
+  },
+  {
+    "timestamp": "2026-04-27T13:46:44.488762",
+    "f1_before": 0.9995,
+    "retrained": false,
+    "f1_after": null,
+    "improvement": null,
+    "trigger": null,
+    "threshold": 0.9
+  },
+  {
+    "timestamp": "2026-04-27T13:46:44.701063",
+    "f1_before": 0.9995,
+    "retrained": false,
+    "f1_after": null,
+    "improvement": null,
+    "trigger": null,
+    "threshold": 0.999
+  },
+  {
+    "timestamp": "2026-04-27T13:47:05.026617",
+    "f1_before": 0.9995,
+    "retrained": false,
+    "f1_after": null,
+    "improvement": null,
+    "trigger": null,
+    "threshold": 0.9
+  },
+  {
+    "timestamp": "2026-04-27T13:47:05.224572",
+    "f1_before": 0.9995,
+    "retrained": false,
+    "f1_after": null,
+    "improvement": null,
+    "trigger": null,
+    "threshold": 0.999
+  },
+  {
+    "timestamp": "2026-05-06T02:27:51.314466",
+    "f1_before": 0.9996,
+    "retrained": false,
+    "f1_after": null,
+    "improvement": null,
+    "trigger": null,
+    "threshold": 0.9
+  },
+  {
+    "timestamp": "2026-05-06T02:27:51.485484",
+    "f1_before": 0.9996,
+    "retrained": false,
+    "f1_after": null,
+    "improvement": null,
+    "trigger": null,
+    "threshold": 0.999
+  },
+  {
+    "timestamp": "2026-05-06T03:01:22.189273",
+    "f1_before": 0.9995,
+    "retrained": false,
+    "f1_after": null,
+    "improvement": null,
+    "trigger": null,
+    "threshold": 0.9,
+    "archive": null,
+    "label": "normal_check"
+  },
+  {
+    "timestamp": "2026-05-06T03:02:07.763826",
+    "f1_before": 0.9995,
+    "retrained": true,
+    "f1_after": 0.9996,
+    "improvement": 0.0001,
+    "trigger": "f1_below_threshold",
+    "threshold": 0.9999,
+    "archive": "../models\\rf_archived_20260506_030207.pkl",
+    "label": "simulation"
+  },
+  {
+    "timestamp": "2026-05-06T05:31:48.196333",
+    "f1_before": 0.9955,
+    "retrained": false,
+    "f1_after": null,
+    "improvement": null,
+    "trigger": null,
+    "threshold": 0.9,
+    "archive": null
+  },
+  {
+    "timestamp": "2026-05-06T05:32:33.360430",
+    "f1_before": 0.9955,
+    "retrained": true,
+    "f1_after": 0.9996,
+    "improvement": 0.0041,
+    "trigger": "f1_below_threshold",
+    "threshold": 0.9999,
+    "archive": "c:\\Users\\shubh\\phishing-detection-framework\\models\\rf_archived_20260506_053233.pkl"
+  },
+  {
+    "timestamp": "2026-05-06T05:33:20.732574",
+    "f1_before": 0.9955,
+    "retrained": false,
+    "f1_after": null,
+    "improvement": null,
+    "trigger": null,
+    "threshold": 0.9,
+    "archive": null
+  },
+  {
+    "timestamp": "2026-05-06T05:33:32.851294",
+    "f1_before": 0.9955,
+    "retrained": true,
+    "f1_after": 0.9996,
+    "improvement": 0.0041,
+    "trigger": "f1_below_threshold",
+    "threshold": 0.9999,
+    "archive": "c:\\Users\\shubh\\phishing-detection-framework\\models\\rf_archived_20260506_053332.pkl"
+  }
+]

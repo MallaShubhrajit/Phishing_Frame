@@ -1,0 +1,9 @@
+{
+  "total_rows": 100873,
+  "total_features": 15,
+  "phishing_count": 37380,
+  "legitimate_count": 63492,
+  "missing_values": 1,
+  "duplicate_urls": 0,
+  "dataset_source": "LegitPhish - Mendeley Data v1"
+}
