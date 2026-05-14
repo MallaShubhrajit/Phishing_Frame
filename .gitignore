@@ -1,3 +1,8 @@
-models/phishing_graph.gml 
-models/*.pkl 
-data/raw/ 
+data/raw/
+venv/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
